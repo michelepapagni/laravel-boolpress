@@ -12,6 +12,7 @@
 */
 
 Route::get('/', 'HomeController@index');
+Route::get('/categorie/{slug}', 'CategoryController@printAllPosts');
 
 Auth::routes();
 
